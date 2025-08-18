@@ -43,7 +43,7 @@ register_button = st.button("Register")
 if register_button:
     if new_user == "":
         st.warning("Please enter a username.")
-        if new_pass == "":
+    if new_pass == "":
             st.warning("Please enter a password.")
     else:
 
