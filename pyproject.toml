@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "argon2-cffi>=25.1.0",
     "bcrypt>=4.3.0",
+    "dotenv>=0.9.9",
     "panda>=0.3.1",
     "pymongo>=4.14.0",
     "streamlit>=1.48.1",

@@ -1,9 +1,16 @@
 import pymongo
 import streamlit as st
 from argon2 import PasswordHasher
+import os
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
+
 
 # MongoDB connection
-client = pymongo.MongoClient("mongodb+srv://dubeysaksham801:Iron_Man@library-management.lpivfay.mongodb.net/")
+uri = os.getenv('MONGO_URI')
+client = pymongo.MongoClient(uri)
 db = client['LMS']
 collection = db['users']
 
