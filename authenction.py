@@ -10,6 +10,7 @@ load_dotenv()
 
 # MongoDB connection
 uri = os.getenv('MONGO_URI')
+uri2 = st.secrets["MONGO_URI"]
 client = pymongo.MongoClient(uri)
 db = client['LMS']
 collection = db['users']
